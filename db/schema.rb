@@ -17,9 +17,12 @@ ActiveRecord::Schema.define(version: 20140818211032) do
   enable_extension "plpgsql"
 
   create_table "users", force: true do |t|
-    t.string "username"
-    t.string "email"
-    t.string "password"
+    t.string "username",        null: false
+    t.string "email",           null: false
+    t.string "password_digest", null: false
   end
+
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
 end

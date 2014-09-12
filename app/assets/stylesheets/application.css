@@ -54,33 +54,24 @@ button.link:hover span,
 button.link:focus span {
     color: black;
 }
-.flex-container {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: stretch;
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    align-content: center;
+    height: auto;
+
+    &:after {
+visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
-.flex-item-1 {
-    width: <property unused>
-height: null;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 98%;
 }
-.flex-item-2 {
-    width: <property unused>
-height: null;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 200px;
+#photo{
+    width: 100%;
 }
 
-.flex-item-3 {
-    width: <property unused>
-height: null;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 200px;
-}
