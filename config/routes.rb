@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   post "signin" => "sessions#create"
   get "signout" => "sessions#destroy", as: :signout
 
-  root "welcome#index"
+  root "dashboard#index"
 
   resources :users
   resources :sessions
