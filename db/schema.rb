@@ -11,10 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140818211032) do
+ActiveRecord::Schema.define(version: 20140916211853) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "hoas", force: true do |t|
+    t.integer "user_id",  null: false
+    t.string  "location", null: false
+    t.string  "document", null: false
+  end
 
   create_table "users", force: true do |t|
     t.string "username",        null: false

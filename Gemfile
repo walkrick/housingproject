@@ -38,3 +38,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :development, :test do
+  gem "rspec-rails", "3.0.1"
+  gem 'rspec-collection_matchers', '~> 1.0.0'
+  gem "capybara", "2.3.0"
+  gem 'launchy', '~> 2.4.2'
+end
