@@ -13,9 +13,14 @@
  *= require_tree .
  *= require_self
  */
-
-body {
+body{
     background-color: lightyellow;
+
+}
+.index_image {
+    background-image: url("http://31.media.tumblr.com/280a265f4280a671a98657cce2950bb2/tumblr_nbk6auQG2K1st5lhmo1_1280.jpg");
+    background: ;
+    color: white;
 }
 
 .navbar-brand {
@@ -68,7 +73,6 @@ button.link:focus span {
     box-sizing: border-box;
     align-content: center;
     height: auto;
-
 &
 :after {
     visibility: hidden;
@@ -78,10 +82,9 @@ button.link:focus span {
     clear: both;
     height: 0;
 }
-
-}
-img {
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
+label {
+    display: inline-block;
+    width: 6em;
+}
