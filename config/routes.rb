@@ -11,8 +11,10 @@ Rails.application.routes.draw do
   get "/about" => "pages#about", as: :about
 
 
-  resources :users
   resources :sessions
+  resources :users
+  resources :hoas
+  end
 
 
-end
+

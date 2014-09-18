@@ -1,0 +1,30 @@
+<h3>Upload Document</h3>
+
+<%= form_for @hoa do |f| %>
+
+  <% if @hoa.errors.present? %>
+    <div class="errors">
+      <h3>There was an error</h3>
+      <ul class="error-list">
+        <% @hoa.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= f.label :location, class: "form-label" %>
+    <%= f.text_field :location %>
+  </div>
+
+  <div>
+    <%= f.label :document, class: "form-label" %>
+    <%= f.text_field :document %>
+  </div>
+
+  <div>
+    <%= f.submit class: "form-button" %>
+  </div>
+
+<% end %>
